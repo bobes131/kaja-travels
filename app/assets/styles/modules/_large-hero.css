@@ -1,4 +1,9 @@
-.large.hero {
+.large-hero {
     position: relative;
-
+    
+    &__content {
+        position: absolute;
+        text-align: center;
+        transform: translateY(50%);
+    }
 }
