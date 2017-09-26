@@ -6,6 +6,11 @@ img {
     max-width: 100%;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -555,13 +560,122 @@ template {
 .wrapper {
     padding-left: 18px;
     padding-right: 18px;
-    
+    overflow: hidden;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.wrapper__medium {
+        max-width: 976px;
+    }
+
+.wrapper .wrapper {
+        padding-left: 0;
+        padding-right: 0; 
+    }
+
+.wrapper__b-margin {
+        margin-bottom: 1rem;
+    }
+
+@media (min-width: 530px){
+
+.wrapper__b-margin {
+        margin-bottom: 3.875rem
+    }
+    }
+
 .page-section {
-    padding: 4.5rem 0;
+    padding: 1.2rem 0;
+    
 }
+
+@media (min-width: 800px){
+
+.page-section {
+    padding: 4.5rem 0
+    
+}
+    }
+
+.headline {
+    font-weight: 300;
+    font-size: 1.9rem;
+    color: #2f5572;
+}
+
+@media (min-width: 530px){
+
+.headline {
+        font-size: 2.875rem
+}
+    }
+
+.headline__centered {
+        text-align: center;
+    }
+
+.headline__orange {
+        color: #d59541;
+    }
+
+.headline__small {
+      font-size: 1.2rem;
+    }
+
+@media (min-width: 530px){
+
+.headline__small {
+            font-size: 1.875rem
+    }
+    }
+
+.headline__narrow {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.headline__light {
+        font-weight: 100;
+    }
+
+.headline__b-margin-small {
+        margin-bottom: .5em;
+    }
+
+.headline__b-margin-large {
+        margin-bottom: 1.6em;
+    }
+
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+@media (min-width: 800px){
+     .row__medium-4 {
+        float: left;
+        width: 33.33%; 
+    }
+    }
+
+@media (min-width: 800px){
+     .row__medium-8 {
+        float: left;
+        width: 66.66%; 
+    }
+    }
+
+/*Tohle bere všechny přímý potomky třídy row který maj typ div*/
+
+.row__gutters {
+        margin-right: -65px;
+    }
+
+.row__gutters > div {
+        padding-right: 65px;
+    }
  
