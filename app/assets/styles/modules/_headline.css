@@ -23,6 +23,10 @@
         }
     }
     
+    &__no-t-margin {
+        margin-top: 0;
+    }
+    
     &__narrow {
         max-width: 500px;
         margin-left: auto;
