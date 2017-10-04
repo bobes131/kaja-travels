@@ -479,6 +479,10 @@ template {
     
 }
     }
+.page-section__blue {
+        background-color: #2f5572; 
+        color: white;
+    }
 .headline {
     font-weight: 300;
     font-size: 1.9rem;
