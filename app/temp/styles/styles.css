@@ -471,20 +471,14 @@ template {
     }
 .page-section {
     padding: 1.2rem 0;
-    
 }
 @media (min-width: 800px){
 .page-section {
     padding: 4.5rem 0
-    
 }
     }
 .page-section__blue {
-<<<<<<< HEAD
-        background-color: #2f5572; 
-=======
         background-color: #2f5572;
->>>>>>> our-features
         color: white;
     }
 .headline {

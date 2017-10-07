@@ -7,10 +7,4 @@
         background-color: $mainBlue;
         color: white;
     }
-    
-    &__blue {
-        background-color: $mainBlue; 
-        color: white;
-    }
-    
 }
