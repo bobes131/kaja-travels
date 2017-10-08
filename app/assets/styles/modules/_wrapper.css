@@ -5,9 +5,29 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    
+ 
     &__medium {
         max-width: 976px;
+    }
+    
+    &__no-padding-until-medium {
+        padding-left: 0;
+        padding-right: 0;
+        
+        @mixin atMedium {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+    }
+    
+    &__no-padding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+        
+        @mixin atLarge {
+            padding-left: 18px;
+            padding-right: 18px;
+        }
     }
     
     .wrapper {
