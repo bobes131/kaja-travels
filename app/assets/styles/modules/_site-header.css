@@ -7,7 +7,12 @@
     ease-out;
     
     @mixin atMedium {
+        position: fixed;
         background-color: rgba($mainBlue, .3);
+        
+        &__dark {
+            background-color: rgba(23,51,72, .85);
+        }
     }
     
     &__is-expanded {
@@ -28,10 +33,15 @@
         transform: translateX(-50%) scale(.8);
         background-color: $mainBlue;
         padding: 20px 36px;
-        
+        transition: transform .3s ease-out;
         @mixin atMedium {
-             left: auto;
+            
+            left: auto;
             transform: translateX(0);
+            
+            .site-header__dark & {
+                transform: scale(.6);
+            }
         }
         
         
